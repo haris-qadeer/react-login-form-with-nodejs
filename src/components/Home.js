@@ -1,14 +1,14 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   const location = useLocation();
 
   return (
-    <div className="homepage">
+    <div>
       <h1>Hello {location.state.id} and welcome to the home</h1>
     </div>
   );
-}
+};
 
 export default Home;

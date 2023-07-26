@@ -6,9 +6,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-// app.get("/", cors(), (req, res) => {
-//   res.send();
-// });
 app.get("/", cors(), async (req, res) => {
   try {
     const user = await collection.find({});
